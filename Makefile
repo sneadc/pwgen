@@ -33,4 +33,4 @@ installdirs:
 uninstall:
 	rm -f ${DESTDIR}${bindir}/${notdir ${PROGRAM}}
 
-.PHONY: all ${PROGRAM} clean
+.PHONY: clean

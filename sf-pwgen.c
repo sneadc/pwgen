@@ -32,7 +32,7 @@
 #include <stdlib.h>
 
 #define PROGRAM_NAME "sf-pwgen"
-#define PROGRAM_VERSION "1.5.1"
+#define PROGRAM_VERSION "1.5.2"
 
 #define PASS_DEFAULT_COUNT 5
 #define PASS_DEFAULT_LENGTH 12
@@ -125,7 +125,7 @@ int main(int argc, char *const argv[]) {
         return EXIT_SUCCESS;
       case 'v':
         printf("%s v%s\n", PROGRAM_NAME, PROGRAM_VERSION);
-        break;
+        return EXIT_SUCCESS;
       default:
         usage(argv[0]);
         return EXIT_FAILURE;

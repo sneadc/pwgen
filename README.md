@@ -8,7 +8,8 @@ SecurityFoundation framework in macOS. It runs on Mountain Lion and later.
       Usage: sf-pwgen [options]
     
         -a | --algorithm  Available algorithms: memorable, random, letters, alphanumeric, numbers.
-        -c | --count      The number of passwords to generate (default: 5)    -l | --length     Desired length of the generated passwords (default: 12)
+        -c | --count      The number of passwords to generate (default: 5)
+        -l | --length     Desired length of the generated passwords (default: 12)
         -v | --version    Display version
         -h | --help       Display this help
 

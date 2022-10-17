@@ -1,10 +1,7 @@
-sf-pwgen
-*.o
+.idea/
+.build-*/
+.out/
 
-# Xcode / OS X
-.DS_Store
-*.pbxuser
-xcuserdata
-build
-*.xcworkspace
-*.dSYM
+*.xcodeproj/
+
+debug.*

@@ -1,16 +1,17 @@
-CC?=clang
-CFLAGS?=-Wall -Wextra -Os -fobjc-arc
-TARGET=sf-pwgen
-SRC=sf-pwgen.m
-LIBS=-framework Foundation -framework CoreFoundation -framework SecurityFoundation
+SRC		= sf-pwgen.c
+LIBS	= -framework CoreFoundation -framework SecurityFoundation
 
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC) $(LIBS)
+PROGRAM	= sf-pwgen
+
+all: format $(PROGRAM)
+
+$(PROGRAM):
+	$(CC) $(CFLAGS) $(SRC) $(LIBS) -o $(PROGRAM)
 
 format:
-	clang-format -i -style=Mozilla $(SRC) $(wildcard SecurityFoundation/*.h)
+	clang-format -style=file -fallback-style=Google -i $(SRC) $(wildcard *.h)
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(PROGRAM)
 
 .PHONY: clean

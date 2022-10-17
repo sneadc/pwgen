@@ -29,7 +29,7 @@
 
 #include "SFPasswordAssistant.h"
 #include <getopt.h>
-#include <printf.h>
+#include <stdlib.h>
 
 #define PROGRAM_NAME "sf-pwgen"
 #define PROGRAM_VERSION "1.5.1"
@@ -39,14 +39,14 @@
 
 void usage(const char *programName) {
   printf(
-    "%s - macOS password generator\n\n"
-    "  Usage:\n"
+    "%1$s - macOS password generator\n\n"
+    "  Usage: %1$s [options]\n\n"
     "    -a | --algorithm  Available algorithms: memorable, random, letters, "
     "alphanumeric, numbers.\n"
-    "    -c | --count      The number of passwords to generate (default: %d)"
+    "    -c | --count      The number of passwords to generate (default: %2$d)"
     "    -l | --length     Desired length of the generated passwords "
     "(default: "
-    "%d)\n"
+    "%3$d)\n"
     "    -v | --version    Display version\n"
     "    -h | --help       Display this help\n",
     programName, PASS_DEFAULT_COUNT, PASS_DEFAULT_LENGTH);

@@ -3,7 +3,7 @@ LIBS	= -framework CoreFoundation -framework SecurityFoundation
 
 PROGRAM	= sf-pwgen
 
-all: format $(PROGRAM)
+all: $(PROGRAM)
 
 $(PROGRAM):
 	$(CC) $(CFLAGS) $(SRC) $(LIBS) -o $(PROGRAM)

@@ -31,7 +31,7 @@
 #include <getopt.h>
 #include <printf.h>
 
-#define PROGRAM_NAME "pigeon"
+#define PROGRAM_NAME "sf-pwgen"
 #define PROGRAM_VERSION "1.5.1"
 
 #define PASS_DEFAULT_COUNT 5

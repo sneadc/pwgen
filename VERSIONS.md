@@ -1,5 +1,8 @@
 # sf-pwgen version history
 
+## 1.5.1 (2022-10-17)
+ * Personal version, strictly 'C', part of my security framework playground.
+
 ## 1.5 (2019-04-13)
  * Warn if passwords are shorter than requested. Thanks to @dancek for implementing this.
  * Updated Xcode project to fix Travis CI (had to add a unit test).
